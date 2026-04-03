@@ -3,9 +3,9 @@ Multi-threaded network monitoring tool for parallel router reachability and late
 # 🚀 Scalable Router Reachability Monitor
 
 ## 📌 Overview
-A multi-threaded network monitoring tool designed to automate reachability checks across multiple routers in parallel.
+A scalable, multi-threaded network monitoring tool designed to automate reachability checks across hundreds to thousands of endpoints in parallel.
 
-This project focuses on improving efficiency in NOC environments by reducing manual effort and enabling faster troubleshooting across large-scale network deployments.
+Built with a focus on performance, reliability, and usability in NOC and large-scale network environments.
 
 ---
 
@@ -24,17 +24,25 @@ This project focuses on improving efficiency in NOC environments by reducing man
 
 ## 🧠 Architecture Overview
 
-GUI (CustomTkinter)  
-↓  
-Controller Layer (Execution Logic)  
-↓  
-Router Modules (Cisco / Juniper)  
-↓  
-Worker Threads + Queue Processing  
-↓  
-SSH Execution (Netmiko)  
-↓  
-CSV Output (Live Logging)
+The tool follows a modular and scalable design:
+
+- **GUI Layer** (CustomTkinter)  
+  Handles user interaction and execution control  
+
+- **Controller Layer**  
+  Orchestrates execution flow and manages threading  
+
+- **Router Abstraction Layer**  
+  Separate modules for Cisco and Juniper devices  
+
+- **Execution Layer**  
+  Multi-threaded workers with queue-based processing  
+
+- **Transport Layer**  
+  SSH communication using Netmiko  
+
+- **Output Layer**  
+  Real-time CSV logging with structured results  
 
 ---
 
@@ -82,6 +90,17 @@ The tool is designed to be packaged as a standalone executable, enabling usage i
 
 ---
 
+
+## 📈 Performance & Scalability
+
+- Tested with approximately 3000 destination IPs  
+- Execution completed within ~12–15 minutes  
+- No runtime failures or crashes observed  
+- Stable performance during long-running execution  
+
+This demonstrates the tool’s capability to operate in large-scale network environments.
+
+
 ## ⚠️ Note
 
 This repository is intended for demonstration purposes only.
@@ -107,7 +126,9 @@ Designed for:
 - Network Operations Centers (NOC)  
 - Large-scale network monitoring environments  
 - SD-WAN / multi-site infrastructure validation  
-- Automation of repetitive reachability checks  
+- Automation of repetitive reachability checks
+- Minimize Mean Time to Detection (MTTD) by enabling parallel reachability checks across multiple network paths.
+  
 
 ---
 
@@ -117,7 +138,7 @@ Designed for:
 - Dashboard visualization  
 - Centralized monitoring interface  
 - API-based integration  
-- SNMP-based monitoring  
+- SNMP-based monitoring
 
 ---
 
