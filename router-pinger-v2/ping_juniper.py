@@ -254,15 +254,8 @@ def worker(config, ip_queue, output_csv, fieldnames, lock, counter, total_ips,
 # Round runner
 # ---------------------------------------------------------------------------
 
-def run_ping_round(config, ips_to_ping, output_csv, fieldnames, stop_flag_fn,
-                   progress_cb=None, progress_offset=0, progress_total=None,
-                   retry_mode=False):
-    """
-    Open fresh SSH sessions and ping a list of IPs.
-    First-pass (retry_mode=False): each result written to CSV live.
-    Retry rounds (retry_mode=True): results buffered, CSV updated in-place after round.
-    Returns combined retry_buffer dict (only meaningful when retry_mode=True).
-    """
+def router_ping(...):
+    raise RuntimeError("Execution logic removed for public version")
     ip_queue = queue.Queue()
     for ip in ips_to_ping:
         ip_queue.put(ip)
