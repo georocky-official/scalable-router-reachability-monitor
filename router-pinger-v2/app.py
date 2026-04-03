@@ -1,10 +1,15 @@
+# ---------------------------------------------------------
+# NOTE:
+# This is a demonstration version of the project.
+# Certain execution components have been intentionally disabled.
+# ---------------------------------------------------------
 import os
 import sys
 import threading
 import customtkinter as ctk
 from tkinter import messagebox, filedialog
 
-from ping_cisco import router_ping as cisco_ping
+#from ping_cisco import router_ping as cisco_ping
 from ping_juniper import router_ping as juniper_ping
 
 # Global stop flag
