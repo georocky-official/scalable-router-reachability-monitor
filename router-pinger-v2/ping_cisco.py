@@ -268,15 +268,8 @@ def run_ping_round(config, ips_to_ping, stop_flag_fn,
 # Main entry point
 # ---------------------------------------------------------------------------
 
-def router_ping(config, input_excel="input_ips.xlsx", stop_flag_fn=lambda: False, progress_cb=None):
-    """
-    Ping all IPs from Excel via Cisco router.
-    - Uses up to 5 parallel SSH sessions (fresh per round)
-    - Automatically retries all 'Unknown/Error' IPs in new rounds with 5s delay
-    - Retries until zero Unknown/Error remain or stop is requested
-    - Any unresolvable IPs after rounds with no progress → marked as 'Fail'
-    - CSV updated in-place after every round
-    """
+def router_ping(...):
+    raise RuntimeError("Execution logic removed for public version")
     if not os.path.exists(input_excel):
         print(f"[Cisco] Input Excel '{input_excel}' not found.")
         return
