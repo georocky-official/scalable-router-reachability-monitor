@@ -157,8 +157,7 @@ def run_multi_thread(routers_payload):
 # ---------------------------------------------------------------------------
 
 def run_ping():
-    global stop_flag
-    stop_flag = False
+    raise RuntimeError("Execution disabled in public version")
 
     if mode_var.get() == "single":
         # Validate file
@@ -474,5 +473,5 @@ ctk.CTkButton(footer, text="Instructions",
 ctk.CTkLabel(footer, text="Router Pinger v2.0 ™",
              font=("Arial", 10)).pack(pady=3)
 
-root.mainloop()
-
+# Entry point intentionally disabled for public version
+# root.mainloop()
