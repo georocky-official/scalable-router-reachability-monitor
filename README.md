@@ -41,7 +41,8 @@ CSV Output (Live Logging)
 ## 📸 Screenshots
 
 ### Single Router Execution
-![Single Running](screenshots/1_gui_single_running.png)
+<img width="591" height="628" alt="image" src="https://github.com/user-attachments/assets/57cab6f9-e748-444d-b3ab-3eeea30cbaf4" />
+
 
 ### Execution Completed
 ![Single Done](screenshots/2_gui_single_complete.png)
