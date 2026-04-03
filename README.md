@@ -45,16 +45,20 @@ CSV Output (Live Logging)
 
 
 ### Execution Completed
-![Single Done](screenshots/2_gui_single_complete.png)
+<img width="1441" height="1536" alt="image" src="https://github.com/user-attachments/assets/971bdc54-b3f2-41cf-960f-7f0103241086" />
+
 
 ### Multi-Router Parallel Execution
-![Multi Running](screenshots/3_multi_router_running.png)
+<img width="1525" height="1536" alt="image" src="https://github.com/user-attachments/assets/ec0d263f-185f-4781-9ccd-a92d7deeb18d" />
+
 
 ### Safe Interruption Handling
-![Stopped](screenshots/4_multi_router_stopped.png)
+<img width="1536" height="1521" alt="image" src="https://github.com/user-attachments/assets/568c5f73-81ee-425d-9377-85cf447b8e13" />
+
 
 ### Sample Output (CSV)
-![CSV](screenshots/5_output_csv.png)
+<img width="1126" height="1536" alt="image" src="https://github.com/user-attachments/assets/ae1d1a41-44f0-4c7b-949f-bb1401bb80e2" />
+
 
 ---
 
